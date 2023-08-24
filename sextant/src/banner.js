@@ -1,12 +1,14 @@
-import React from 'react';
-import './banner.css'; // Import your CSS or styling here
+import React, { Component } from 'react';
+import './Banner.css';
 
-const Banner = ({ title }) => {
-  return (
-    <div className="banner">
-      <h1>{"Monitoring for Technicians"}</h1>
-    </div>
-  );
-};
+class Banner extends Component {
+    render() {
+        return (
+            <div className="Banner">
+                <h1>{this.props.bannerText}</h1>
+            </div>
+        );
+    }
+}
 
 export default Banner;
